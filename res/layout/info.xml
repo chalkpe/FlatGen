@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="FlatGen"
+		android:layout_width="wrap_content"
+		android:layout_marginBottom="20dp"
+		android:textSize="25sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="This program uses Android-Color-Picker by Chiral Code. See https://github.com/chiralcode/Android-Color-Picker for licensing information.\n\n이 어플리케이션은 Chiral Code의 Android-Color-Picker 라이브러리를 사용합니다. https://github.com/chiralcode/Android-Color-Picker 에서 라이센스 정보를 확인할 수 있습니다."
+		android:layout_width="wrap_content"
+		android:layout_marginBottom="20dp"
+		android:textSize="13sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="@string/copyright"
+		android:layout_width="wrap_content"
+		android:textSize="15sp"/>
+
+</LinearLayout>
+

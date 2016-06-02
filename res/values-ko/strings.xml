@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="info">정보</string>
+	
+	<string name="text">글자</string>
+	<string name="textsize">글자 크기</string>
+	<string name="pickbtn">선택</string>
+	<string name="textcolor">글자색</string>
+	<string name="fontpath">폰트</string>
+	
+	<string name="hasBackground">배경색 채우기</string>
+	<string name="style">모양</string>
+	<string name="backcolor">배경색</string>
+	<string name="shadowcolor">그림자색</string>
+	<string name="pick">샘플 색상 선택</string>
+	<string name="run">시작!</string>
+	<string name="undo">실행 취소</string>
+	
+	<string name="error">오류 발생</string>
+	<string name="colorParseError">잘못된 색상 코드입니다.</string>
+	<string name="missingTextError">글자가 필요합니다.</string>
+	<string name="savedAlert">이미지가 %s 에 저장되었습니다.</string>
+	<string name="deletedAlert">마지막으로 저장된 이미지 %s 가 삭제되었습니다.</string>
+	
+	<string name="creatingText">텍스트 생성중...</string>
+	<string name="creatingBitmap">비트맵 생성중...</string>
+	<string name="creatingShadow">그림자 생성중...</string>
+	<string name="mergingImage">이미지 병합중...</string>
+	<string name="savingImage">이미지 저장중...</string>
+	
+</resources>

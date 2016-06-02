@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FlatGen</string>
+	<string name="copyright">FlatDesignGenerator\nCopyright © 2014 Chalk. All rights reserved.</string>
+	<string name="info">About</string>
+    
+	<string name="text">Text</string>
+	<string name="textsize">Text size</string>
+	<string name="pickbtn">Pick</string>
+	<string name="textcolor">Text color</string>
+	<string name="fontpath">Font</string>
+	
+	<string name="hasBackground">Fill background color</string>
+	<string name="style">Shape</string>
+	<string name="backcolor">Background color</string>
+	<string name="shadowcolor">Shadow color</string>
+	<string name="pick">Sample color</string>
+	<string name="run">Run!</string>
+	<string name="undo">Undo</string>
+	
+	<string name="error">Error occurred</string>
+	<string name="colorParseError">Wrong color code.</string>
+	<string name="missingTextError">Text is required.</string>
+	<string name="savedAlert">Image was saved to %s</string>
+	<string name="deletedAlert">Last image %s has been deleted</string>
+	
+	<string name="creatingText">Creating text...</string>
+	<string name="creatingBitmap">Creating bitmap...</string>
+	<string name="creatingShadow">Creating shadow...</string>
+	<string name="mergingImage">Merging images...</string>
+	<string name="savingImage">Saving image...</string>
+	
+
+
+	<string name="button_label">OK</string>
+    <string name="pref_name">Pick a color</string>
+    <string name="pref_summary">DialogPreference with Color Picker.</string>
+
+</resources>

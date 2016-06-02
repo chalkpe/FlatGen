@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="style">
+		<item>직사각형</item>
+		<item>정사각형</item>
+		<item>모서리가 둥근 정사각형</item>
+		<item>원형</item>
+	</string-array>
+</resources>

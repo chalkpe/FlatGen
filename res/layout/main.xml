@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="top"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="@string/copyright"
+		android:layout_width="match_parent"
+		android:textSize="12sp"
+		android:typeface="monospace"
+		android:gravity="center"
+		android:paddingTop="10dp"/>
+
+	<FrameLayout
+		android:layout_height="200dp"
+		android:layout_width="match_parent">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/previewshadow"
+			android:scaleType="fitCenter"
+			android:padding="10dp"
+			android:src="@drawable/sample"/>
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/preview"
+			android:scaleType="fitCenter"
+			android:padding="10dp"
+			android:src="@drawable/sample"/>
+
+	</FrameLayout>
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:padding="7dp">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="@string/text"
+					android:layout_width="wrap_content"
+					android:textSize="16sp"
+					android:layout_marginRight="10dp"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_weight="1"
+					android:hint="Hello"
+					android:id="@+id/text"
+					android:singleLine="true"
+					android:layout_marginRight="15dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="@string/textsize"
+					android:layout_width="wrap_content"
+					android:textSize="16sp"
+					android:layout_marginRight="10dp"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:hint="200.0"
+					android:text="200.0"
+					android:id="@+id/textsize"
+					android:singleLine="true"
+					android:gravity="center"
+					android:inputType="numberDecimal"
+					android:ems="4"
+					android:layout_width="wrap_content"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="@string/textcolor"
+					android:layout_width="wrap_content"
+					android:textSize="16sp"
+					android:layout_marginRight="10dp"
+					android:layout_weight="1"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:text="#FFFFFF"
+					android:hint="#FFFFFF"
+					android:maxLength="9"
+					android:id="@+id/textcolor"
+					android:singleLine="true"
+					android:ems="5"
+					android:gravity="center"
+					android:layout_width="wrap_content"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="@string/pickbtn"
+					android:layout_width="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:id="@+id/picktextcolor"
+					android:onClick="pickColor"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="@string/fontpath"
+					android:layout_width="wrap_content"
+					android:textSize="16sp"
+					android:layout_marginRight="10dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_weight="1"
+					android:text=""
+					android:id="@+id/fontpath"
+					android:ellipsize="start"
+					android:singleLine="true"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="@string/pickbtn"
+					android:layout_width="wrap_content"
+					android:id="@+id/chooseFontFile"
+					android:onClick="chooseFontFile"
+					android:layout_marginLeft="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="@string/style"
+					android:layout_width="wrap_content"
+					android:textSize="16sp"
+					android:layout_marginRight="10dp"
+					android:layout_weight="1"/>
+
+				<Spinner
+					android:entries="@array/style"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/imageStyleSpinner"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="@string/backcolor"
+					android:layout_width="wrap_content"
+					android:textSize="16sp"
+					android:layout_marginRight="10dp"
+					android:layout_weight="1"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:text="#34495E"
+					android:hint="#34495E"
+					android:maxLength="9"
+					android:id="@+id/backcolor"
+					android:singleLine="true"
+					android:ems="5"
+					android:gravity="center"
+					android:layout_width="wrap_content"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="@string/pickbtn"
+					android:layout_width="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:id="@+id/pickbackcolor"
+					android:onClick="pickColor"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="@string/shadowcolor"
+					android:layout_width="wrap_content"
+					android:textSize="16sp"
+					android:layout_marginRight="10dp"
+					android:layout_weight="1"/>
+
+				<EditText
+					android:layout_height="wrap_content"
+					android:text="#2C3E50"
+					android:hint="#2C3E50"
+					android:maxLength="9"
+					android:id="@+id/shadowcolor"
+					android:singleLine="true"
+					android:ems="5"
+					android:gravity="center"
+					android:layout_width="wrap_content"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="@string/pickbtn"
+					android:layout_width="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:id="@+id/pickshadowcolor"
+					android:onClick="pickColor"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="right|center_vertical">
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="@string/undo"
+					android:layout_width="wrap_content"
+					android:layout_marginRight="10dp"
+					android:layout_weight="1"
+					android:onClick="undoLast"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="@string/pick"
+					android:layout_width="wrap_content"
+					android:layout_marginRight="10dp"
+					android:id="@+id/pick"
+					android:onClick="openPickDialog"
+					android:layout_weight="1"/>
+
+				<Button
+					android:layout_height="wrap_content"
+					android:text="@string/run"
+					android:layout_width="wrap_content"
+					android:id="@+id/run"
+					android:onClick="onClick"
+					android:layout_weight="1"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+
